@@ -1,0 +1,389 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    padding:0 2rem;
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+ @media(width<=850)
+ {
+
+    .h{
+
+        display:grid !important;
+        grid-template-columns: ;
+
+    }
+
+ } 
+.h
+{
+    display:flex;
+    padding:2rem 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 120rem;
+    margin:0 auto;
+
+}
+
+
+
+.logo
+{
+    width:5rem;
+}
+
+
+
+h3
+{
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+.login
+{
+    display: flex;
+
+    gap:1rem;
+
+}
+.lg
+{
+    border:none;
+    padding:0.6rem 0.3rem;
+    border-radius: 2rem;
+    outline: none;
+    text-align: center;
+    font-size: 1.6rem;
+    color:rgba(0,0,0,0.5);
+    width:12.2rem;
+    font-family: inherit;
+}
+.loginbtn
+{
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.lg::placeholder
+{
+    color:rgba(0,0,0,0.35);
+    font-size: 1.6rem;
+}
+.main
+{
+  
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display:grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto repeat(3,15rem) auto;
+    gap:2rem 2rem;
+    transition: all 1s;
+}
+
+.cblabel
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.asofdate
+{
+    font-size: 1.5rem;
+    color:rgba(0,0,0,0.65)
+}
+
+.crntbalance
+{
+    
+    
+    font-size: 4rem;
+    text-align: right;
+}
+
+.container
+{
+    background-color: white;
+
+    overflow: scroll;
+    border-radius: 1rem;
+    grid-column: 1;
+    grid-row: 2/span 3;
+    min-width: 55rem;
+    
+}
+
+.row
+{
+display: flex;
+justify-content: space-between;  
+padding:2rem 0;
+border-bottom: 1px solid rgba(0,0,0,0.15);  
+
+}
+
+.td
+{
+    display: flex;
+    gap:2rem;
+    padding-left: 4rem;
+    font-size: 2rem;
+}
+
+.type
+{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding:0.2rem .8rem;
+    border-radius: 1rem;
+    color:white;
+    height:1.4rem;
+    
+
+}
+
+
+
+.deposit
+{
+    background-image: linear-gradient(to bottom right , rgb(136, 242, 23),rgb(0, 126, 76));
+}
+
+.withdrawal
+{
+    background-image: linear-gradient(to bottom right,rgb(255, 12, 130),rgb(255, 94, 0));
+}
+
+.date
+{
+    font-size: 1.1rem;
+    
+    color: rgba(0,0,0,0.65);
+    font-weight: 800;
+}
+
+.amnt
+{
+    padding-right: 4rem;
+    font-size: 1.8rem;
+
+}
+.process
+{
+    
+    padding:2rem 4rem;
+    border-radius: 2rem;
+            
+}
+   
+.transfer
+{   
+    grid-column: 2;
+    grid-row: 2;
+    background-image:linear-gradient(to top left,rgb(255, 174, 0),rgb(255, 217, 0)) ;
+}
+.plabel
+{
+margin-bottom: 2rem;
+font-size: 1.8rem;
+font-weight: 800;
+}
+.pform
+{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    grid-template-rows:auto auto;
+    
+    column-gap:1rem;
+    row-gap: 0.5rem;
+    
+}
+/* request money */
+.pform.pfr
+{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:auto auto;
+
+
+}
+
+.lam
+{
+    grid-column: 1;
+}
+
+.rmbtn
+{
+    grid-column: 2;
+}
+
+.request
+{
+    background-image: linear-gradient(to top left,rgb(62, 158, 110),rgb(115, 180, 62));
+}
+
+
+
+.pinp
+{
+    border:none;
+    padding:0.8rem 0.3rem;
+    opacity: 50%;
+    width:100%;
+    text-align: center;
+    border-radius: 1rem;
+    
+}
+
+
+
+.pl
+{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.pi1
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+.pi2
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pbtn
+{
+    font-size: 1.8rem;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding:1rem 2rem;
+    width:100%;
+}
+
+/* close account */
+
+.close
+{
+    background-image: linear-gradient(to top left,rgb(212, 47, 99) ,rgb(181, 35, 67));
+}
+
+
+
+
+
+
+
+.request
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.close
+{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.foot1
+{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 5;
+    margin-bottom: .5rem;
+    
+   
+}
+
+.fp1
+{
+    display: flex;
+    align-items: first baseline;
+    
+    gap:1.2rem;
+ 
+}
+
+.famountstyle
+{
+    font-size: 2.2rem;
+    font-weight: 500;
+   
+
+}
+
+
+.flabelstyle
+{
+    font-size: 1.2rem;
+
+    font-weight: 800;
+    color:rgba(0,0,0,0.65)
+}
+
+.inamount,.intamount
+{
+    color:rgb(18, 172, 69);
+}
+
+.outamount
+{
+    color:rgb(235, 12, 101);
+}
+
+.sortbtn
+{
+    border:none;
+    font-weight: 600;
+    color: rgba(0,0,0,0.65);
+    cursor: pointer;
+    padding:0.5rem;
+    transition:color 0.15s;
+    border-radius: 1rem;
+    
+}
+
+.sortbtn:active,.loginbtn:active
+{
+    
+    color: rgba(0,0,0,0.35);
+}
+
+.loggedout
+{
+    justify-self: center;
+    align-self: baseline;
+    display:flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.lgtime
+{
+    padding-left: 0.5rem;
+    font-weight: 800;
+}

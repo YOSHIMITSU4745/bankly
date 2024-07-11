@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banklift</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="h">
+        <h3 class="loglabel">log in to get started</h3>
+        <img class="logo" src="./bank-svgrepo-com.svg" alt="logo" >
+        <form class="login">
+        <input type="text" class="userid lg" placeholder="user">
+            <input type="password" maxlength="6" class="pin lg" placeholder="PIN">
+            <button class="loginbtn">→</button>
+        </form>
+    </div>
+
+    <div class="main">
+        <div class="crntlabel">
+            <h3 class="cblabel">Current balance</h3>
+            <p class="asofdate">As of 09/01/2024, 22:32</p>
+        </div>
+
+        <div class="crntbalance">1,25,500 Rs</div>
+
+        <div class="container">
+            <div class="row">
+                <div class="td">
+
+                    <div class="type deposit">1 DEPOSIT</div>
+                    <div class="date">08/03/2020</div>
+                </div>
+                
+                <div class="amnt">200 Rs</div>
+            </div>
+
+            <div class="row">
+                <div class="td">
+
+                    <div class="type withdrawal">2 WITHDRAWAL</div>
+                    <div class="date">08/03/2020</div>
+                </div>
+                
+                <div class="amnt">-200 Rs</div>
+            </div>
+        </div>
+
+        
+        <div class="process transfer">
+            <div class="plabel">Transfer money</div>
+            <form class="pform">
+                <input type="text" class="pinp pi1">
+                <input type="value" class="pinp pi2">
+                <button class="pbtn trbtn">→</button>
+                <div class="pl pl1">Transfer to</div>
+                <div class="pl pl2">Amount</div>
+            </form>
+        </div>
+        <div class="process request">
+            <div class="plabel">Request loan</div>
+            <form class="pform pfr">
+            
+                <input type="value" class="pinp  lam">
+                <button class="pbtn rmbtn">→</button>
+                
+                <div class="pl pl2">Amount</div>
+            </form>
+        </div>
+        <div class="process close">
+            <div class="plabel">Close account</div>
+            <form class="pform">
+                <input type="text" class="pinp clid">
+                <input type="password" maxlength="6" class="pinp clpin">
+                <button class="pbtn clbtn">→</button>
+                <div class="pl pl1">Confirm user</div>
+                <div class="pl pl2">Confirm PIN</div>
+            </form>
+        </div>
+
+        <div class="foot1">
+            <div class="in fp1">
+                <div class="inlabel flabelstyle ">IN</div>
+                <div class="inamount famountstyle">27,000 Rs</div>
+            </div>
+
+            <div class="out fp1">
+                <div class="outlabel flabelstyle">OUT</div>
+                <div class="outamount famountstyle">27,000 Rs</div>
+            </div>
+
+            <div class="interest fp1">
+                <div class="intlabel flabelstyle">INTEREST</div>
+                <div class="intamount famountstyle">27,000 Rs</div>
+            </div>
+
+            <button class="sortbtn ">⬇️SORT</button>
+            
+        </div>
+
+        <div class="loggedout">
+            you will be logged out in <div class="lgtime">10:00</div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
